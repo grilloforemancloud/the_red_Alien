@@ -43,10 +43,10 @@ type Reader interface {
 •   Qualquer tipo que implemente  pode ser usado como .
 • 	Isso reduz acoplamento e aumenta flexibilidade.
 
-
+```
 ### Composição de structs (OCP)
 
-` type Logger struct {}
+``` type Logger struct {}
 
 func (l Logger) Log(msg string) {
     fmt.Println(msg)
@@ -59,14 +59,14 @@ type Service struct {
 func (s Service) DoWork() {
     s.Log("Executando tarefa...")
 }
-`
+```
 
 - Service reutiliza Logger sem herança.
 - É possível adicionar novos comportamentos sem alterar Logger.
 
-Paralelo em C
+### Paralelo em C
 Em C, não há interfaces, mas é possível simular comportamentos semelhantes com structs + ponteiros de função:
-`typedef struct {
+``` typedef struct {
     int (*operation)(int, int);
 } Strategy;
 
@@ -76,7 +76,7 @@ int multiply(int a, int b) { return a * b; }
 Strategy s;
 s.operation = add;
 printf("%d\n", s.operation(2, 3)); // 5
-`
+```
 
 - Aqui, Strategy funciona como uma interface.
 - Diferentes funções podem ser atribuídas sem mudar o código que usa Strategy.
