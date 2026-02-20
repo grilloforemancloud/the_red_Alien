@@ -191,4 +191,10 @@ Esse “isso faz / isso não faz” ajuda a mostrar que não é só sobre aplica
 Quer que eu monte esse documento já no formato de **README.md de projeto open source**, com seções típicas como *Instalação*, *Uso*, *Exemplos* e *Contribuição* para ficar pronto para subir no GitHub?
 
 
-
+```
+### Essa e a pergunta que originol o texto para ias
+olha linguagem como c e go não existe um design pattern, mais estudando muito poo e solid e ate gof , eu acredito que boas praticas podem ser vistas como um
+ desing pattern mesmo de c e go que são procedural, minha ideia e mesclar o conhecimento de boas praticas nessas linguagens como algumas coisas do solid, exemplo usar struct
+de forma adequada e usar composição e interfaces que existem no go, olha talvez uma struct mais refinada com aquilo que seja realmente necessário, eu acho que economiza
+ate memoria vc chamar somente o que usa, mais não e o principal, mais algo como um srp e quase um open closed com uso de interfaces.
+``` 
